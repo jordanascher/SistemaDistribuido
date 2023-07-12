@@ -11,7 +11,7 @@ def conecta ():
     socketClient.connect((myHost, myPort))
     msgRcv = socketClient.recv(1024).decode('utf-8')
     print(msgRcv)
-# a função def desconecta e recebe um print saindo do chat quando desconecta e fecha o  socket, cliente vai comunicar o cliente e vai encerra a conexão
+# a função def desconecta e recebe um print saindo do chat quando desconecta e fecha o socket
 def desconecta ():
     socketClient.close()
     print('Saindo do chat...')
